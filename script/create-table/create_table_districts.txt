@@ -1,0 +1,12 @@
+CREATE TABLE best_store.districts (
+	id bigint(20) auto_increment NOT NULL,
+	zip_code bigint(20) NOT NULL,
+	name_th varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	name_en varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	amphure_id bigint(20) NOT NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

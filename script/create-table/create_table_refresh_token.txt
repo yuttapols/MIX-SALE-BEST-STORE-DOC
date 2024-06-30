@@ -1,0 +1,11 @@
+CREATE TABLE best_store.refresh_token (
+	id bigint(20) auto_increment NOT NULL,
+	user_id bigint(20) NOT NULL,
+	token varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	expiry_date timestamp DEFAULT current_timestamp() on update current_timestamp() NOT NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

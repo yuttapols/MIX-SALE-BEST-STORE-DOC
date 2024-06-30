@@ -1,0 +1,12 @@
+CREATE TABLE best_store.amphures (
+	id bigint(20) NOT NULL,
+	code varchar(4) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	name_th varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	name_en varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	province_id bigint(20) DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

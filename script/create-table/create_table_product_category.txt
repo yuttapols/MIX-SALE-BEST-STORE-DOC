@@ -1,0 +1,16 @@
+CREATE TABLE best_store.product_category (
+	id bigint(20) auto_increment NOT NULL,
+	product_category_name_th varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ชื่อหมวดหมู่สินค้าไทย',
+	product_category_name_eng varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ชื่อหมวดหมู่สินค้าอังกฤษ',
+	product_category_desc varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'รายละเอียดหมวดหมู่สินค้า',
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'สถานะ',
+	create_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	create_date timestamp DEFAULT NULL NULL,
+	update_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	update_date timestamp DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

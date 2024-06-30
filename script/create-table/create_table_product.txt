@@ -1,0 +1,20 @@
+CREATE TABLE best_store.product (
+	id bigint(20) auto_increment NOT NULL,
+	product_category_id bigint(20) NOT NULL COMMENT 'หมวดหมู่สินค้า',
+	product_name_th varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ชื่อสินค้าภาษาไทย',
+	product_name_eng varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ชื่อสินค้าภาษาอังกฤษ',
+	product_desc varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'รายละเอียดสินค้า',
+	sell_amount decimal(18,2) NOT NULL COMMENT 'ราคาขาย',
+	cost_amount decimal(18,2) NOT NULL COMMENT 'ราคาต้นทุน',
+	product_unit_id bigint(20) NOT NULL,
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'สถานะ',
+	create_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'ผู้สร้าง',
+	create_date timestamp DEFAULT NULL NULL COMMENT 'เวลาที่สร้าง',
+	update_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'ผู้แก้ไข',
+	update_date timestamp DEFAULT NULL NULL COMMENT 'เวลาที่แก้ไข',
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

@@ -1,0 +1,2 @@
+INSERT INTO best_store.user_detail (user_id,prefix_id,customer_no,frist_name,middle_name,last_name,nick_name,email,telephone,house_no,village_no,alley,lane,road,geographies_id,districts,amphures_id,provinces_id,status,create_by,create_date,update_by,update_date) VALUES
+	 (1,1,'BSTR-ADMIN','Joey','','Wawow',NULL,'xx@gmail.com','0931105636','41/11','5',NULL,NULL,NULL,3,401016,402,28,'1','system','2024-06-23 12:51:42',NULL,NULL);

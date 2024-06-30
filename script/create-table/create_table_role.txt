@@ -1,0 +1,15 @@
+CREATE TABLE best_store.`role` (
+	id bigint(20) auto_increment NOT NULL,
+	role_name_eng varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	role_name_th varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	create_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	create_date timestamp DEFAULT current_timestamp() on update current_timestamp() NOT NULL,
+	update_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	update_date timestamp DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

@@ -1,0 +1,16 @@
+CREATE TABLE best_store.product_image (
+	id bigint(20) auto_increment NOT NULL,
+	product_id bigint(20) NOT NULL COMMENT 'ไอดี สินค้า',
+	product_image_name varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ชื่อรูปภาพ',
+	product_image_data longblob NOT NULL COMMENT 'รูปภาพ Blob',
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'สถานะ',
+	create_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	create_date timestamp DEFAULT NULL NULL,
+	update_by varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	update_date timestamp DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

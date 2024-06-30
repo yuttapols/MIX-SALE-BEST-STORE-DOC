@@ -1,0 +1,9 @@
+CREATE TABLE best_store.geographies (
+	id bigint(20) NOT NULL,
+	name varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';

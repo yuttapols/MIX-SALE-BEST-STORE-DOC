@@ -1,0 +1,32 @@
+CREATE TABLE best_store.user_detail (
+	id bigint(20) auto_increment NOT NULL,
+	user_id bigint(20) NOT NULL,
+	prefix_id bigint(20) NOT NULL,
+	customer_no varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	frist_name varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	middle_name varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	last_name varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	nick_name varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	email varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	telephone varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	house_no varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'บ้านเลขที่',
+	village_no varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'หมู่ที่',
+	alley varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'ตรอก',
+	lane varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'ซอย',
+	road varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL COMMENT 'ถนน',
+	geographies_id bigint(20) DEFAULT NULL NULL COMMENT 'ภาค',
+	districts bigint(20) NOT NULL,
+	amphures_id bigint(20) NOT NULL,
+	provinces_id bigint(20) NOT NULL,
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	create_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	create_date timestamp DEFAULT NULL NULL,
+	update_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	update_date timestamp DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';
+CREATE INDEX user_detail_user_id_IDX USING BTREE ON best_store.user_detail (user_id,id);

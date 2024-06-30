@@ -1,0 +1,16 @@
+CREATE TABLE best_store.prefix (
+	id bigint(20) auto_increment NOT NULL,
+	prefix_name_th varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	prefix_name_eng varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	prefix_desc varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	status varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+	create_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	create_date timestamp DEFAULT NULL NULL,
+	update_by varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL NULL,
+	update_date timestamp DEFAULT NULL NULL,
+	CONSTRAINT `PRIMARY` PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci
+COMMENT='';
