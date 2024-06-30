@@ -1,0 +1,2 @@
+ALTER TABLE best_store.user_detail ADD user_image LONGBLOB NULL;
+ALTER TABLE best_store.user_detail CHANGE user_image user_image LONGBLOB NULL AFTER provinces_id;
